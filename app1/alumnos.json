@@ -1,0 +1,24 @@
+{
+  "Alumnos": {
+    "123": {
+      "nombre": "juan",
+      "Apellido": "perez",
+      "foto": ""
+    },
+    "124": {
+      "nombre": "thiago",
+      "Apellido": "canteros",
+      "foto": ""
+    },
+    "125": {
+      "nombre": "agustina",
+      "Apellido": "balsa",
+      "foto": ""
+    },
+    "126": {
+      "nombre": "oscar",
+      "Apellido": "fernandez",
+      "foto": ""
+    }
+  }
+}

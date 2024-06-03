@@ -1,0 +1,128 @@
+/* Estilos generales */
+body {
+    background-color: #222; /* Fondo gris oscuro */
+    color: #fff; /* Texto blanco */
+}
+
+/* Estilo para el barra de navegación horizontal */
+.horizontal-nav {
+    text-align: center;
+    background-color: #444; /* Fondo más oscuro para la barra de navegación */
+}
+
+.horizontal-nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.horizontal-nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.horizontal-nav ul li:last-child {
+    margin-right: 0;
+}
+
+.horizontal-nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+.horizontal-nav ul li a:hover {
+    background-color: #666; /* Tonos más claros al pasar el mouse */
+}
+
+/* Estilos para el footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    transition: transform 0.3s ease-out; /* Transición suave */
+}
+
+/* Clase para ocultar el footer */
+.footer-hidden {
+    transform: translateY(100%); /* Mueve el footer fuera de la pantalla */
+}
+
+
+/* Estilos para el contenedor de bienvenida en la página de inicio */
+.container.welcome {
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo más oscuro con opacidad */
+    color: #fff; /* Texto blanco */
+    width: 80%; /* Ancho del contenedor */
+    margin: auto; /* Centra el contenedor */
+    padding: 50px 0; /* Espaciado superior e inferior */
+    border-radius: 20px; /* Bordes más redondeados */
+    position: relative; /* Permite el posicionamiento relativo */
+    top: 20%; /* Desplaza el contenedor un 20% hacia abajo */
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px; /* Reducir el padding */
+    max-width: 80%; /* Ancho máximo del contenedor */
+    text-align: center;
+    border-radius: 10px; /* Bordes más redondeados */
+}
+
+.overlay h2 {
+    font-size: 28px; /* Tamaño de fuente para el título */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+.overlay p {
+    font-size: 16px; /* Tamaño de fuente para el párrafo */
+    line-height: 1.5; /* Espaciado entre líneas */
+    margin-bottom: 0; /* Eliminar el margen inferior */
+}
+
+/* Estilo para el título centrado con otro tipo de letra */
+h2 {
+    text-align: center;
+    font-family: Arial, sans-serif; /* Cambia el tipo de letra */
+}
+
+/* Estilo para las plantillas de cursos */
+.card {
+    border: none;
+    transition: box-shadow 0.3s;
+    border-radius: 20px;
+    background-color: #fff; /* Cambiar el color de fondo a blanco */
+    margin-right: calc(20% - 10px); /* Ajustar el margen derecho */
+    margin-bottom: 40px; /* Aumentar el margen inferior para dejar espacio para el footer */
+    width: calc(60% - 20px); /* Ajustar el ancho al 60% de la página */
+    color: #000; /* Cambiar el color del texto a negro */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra más suave */
+    padding: 20px; /* Aumentar el padding */
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al pasar el mouse */
+}
+
+/* Estilo para el botón de comprar */
+.btn-primary {
+    background-color: #3498db; /* Azul más suave */
+    border-color: #3498db;
+    border-radius: 25px; /* Bordes más redondeados */
+    color: #fff; /* Texto blanco */
+    text-decoration: none; /* Quita el subrayado del texto */
+    padding: 10px 20px; /* Ajusta el espacio interno */
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s; /* Transición suave */
+}
+
+.btn-primary:hover {
+    background-color: #2980b9; /* Tonos más oscuros al pasar el mouse */
+    border-color: #2980b9;
+}

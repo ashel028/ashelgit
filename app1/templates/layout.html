@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Cursos AXL</h1>
+        <nav class="horizontal-nav">
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('courses') }}">Courses</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+    <footer id="footer">
+        <p>Contactenos para más información.</p>
+        <p>&copy; 2024 Cursos AXL</p>
+    </footer>
+
+    <script>
+        let lastScrollTop = 0;
+        const footer = document.getElementById('footer');
+
+        window.addEventListener('scroll', function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop > lastScrollTop) {
+                footer.classList.add('footer-hidden'); // Agrega la clase para ocultar el footer
+            } else {
+                footer.classList.remove('footer-hidden'); // Remueve la clase para mostrar el footer
+            }
+
+            lastScrollTop = scrollTop;
+        });
+    </script>
+</body>
+</html>

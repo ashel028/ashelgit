@@ -1,0 +1,40 @@
+{% extends 'layout.html' %}
+
+{% block title %}Cursos - Cursos AXL{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h2 class="text-center">Nuestros Cursos</h2>
+        <p class="text-center">Aquí encontrarás información sobre nuestros cursos.</p>
+
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title">Curso de Desarrollo Web</h3>
+                        <p class="card-text">Este curso te enseñará los fundamentos del desarrollo web, incluyendo HTML, CSS y JavaScript.</p>
+                        <a href="#" class="btn btn-primary btn-block">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title">Curso de Backend con Node.js</h3>
+                        <p class="card-text">Aprende a construir aplicaciones backend utilizando Node.js y Express.</p>
+                        <a href="#" class="btn btn-primary btn-block">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title">Curso de Bases de Datos</h3>
+                        <p class="card-text">Explora conceptos de bases de datos relacionales y no relacionales, incluyendo MongoDB.</p>
+                        <a href="#" class="btn btn-primary btn-block">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
